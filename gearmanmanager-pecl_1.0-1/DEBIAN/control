@@ -3,7 +3,7 @@ Version: 1.0-1
 Section: base
 Priority: optional
 Architecture: all
-Depends: php5 | php5-cli, php5-gearman
+Depends: php5-cli, php5-gearman
 Maintainer: Conrad Jones <cjones@turboit.co.uk>
 Description: Gearman Manager
  GearmanManager handles all the process 
