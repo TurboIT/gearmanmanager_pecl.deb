@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	if ! getent passwd gearman > /dev/null; then
+        adduser --system gearman
+    fi
+	
+    mkdir -p /var/run/gearman/
+    chown gearman /var/run/gearman
+    ;;
+
+esac
+
+exit 0
